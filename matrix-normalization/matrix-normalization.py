@@ -7,11 +7,6 @@ def matrix_normalization(matrix, axis=None, norm_type='l2'):
         if matrix.ndim > 2:
             return None
         
- 
-        if matrix.ndim == 1:
-            if axis is not None and axis != 0:
-                return None
-
        
         if axis is not None and axis >= matrix.ndim:
             return None
